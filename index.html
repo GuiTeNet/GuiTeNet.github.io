@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Christian B. Mendl">
+
+	<title>GuiTeNet</title>
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+	<!-- GuiTeNet CSS -->
+	<link href="https://rawgit.com/GuiTeNet/guitenet/master/styles/guitenet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="tutorial.html">Tutorial</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contribute.html">Contribute</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">About</a>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="https://github.com/GuiTeNet/guitenet"><img src="img/github.svg" width="36" style="filter: invert(100%);"></a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<main role="main" class="container">
+		<h1>GuiTeNet</h1>
+
+		<p class="lead">
+			GuiTeNet is a graphical user interface for (quantum) tensor networks.<br />
+			Start by drag-and-dropping the blue circle below.
+		</p>
+
+		<svg id="guitenetSvg" width="600" height="400"></svg>
+
+		<p>
+			<pre id="guitenetCode">Generated Python code will appear here</pre>
+		</p>
+	</main>
+
+	<!-- D3.js -->
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+
+	<!-- GuiTeNet scripts -->
+	<script src="https://rawgit.com/GuiTeNet/guitenet/master/scripts/operations.js"></script>
+	<script src="https://rawgit.com/GuiTeNet/guitenet/master/scripts/backend.js"></script>
+	<script src="https://rawgit.com/GuiTeNet/guitenet/master/scripts/utils.js"></script>
+	<script src="https://rawgit.com/GuiTeNet/guitenet/master/scripts/main.js"></script>
+</body>
+</html>

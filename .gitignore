@@ -1,0 +1,6 @@
+
+obsolete/
+
+# ignore compressed files
+*.zip
+*.tar.gz
