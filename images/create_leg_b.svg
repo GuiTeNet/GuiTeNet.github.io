@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="220" height="180">
+
+	<defs>
+		<style>
+			svg { font-family: Arial, Helvetica, sans-serif; }
+			.tensorSymbol { fill: black; }
+			.tensorCaption { fill: white; text-anchor: middle; font-weight: bold; }
+			.tensorLegLine { fill: rgb(255, 171, 0); stroke: rgb(255, 171, 0); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+			.tensorLegLabel { fill: red; text-anchor: middle; font-weight: bold; }
+			.tensorLegTip { fill: rgb(0, 255, 0); stroke: rgb(255, 171, 0); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+		</style>
+	</defs>
+
+	<rect x="0" y="0" width="220" height="180" style="fill: none; stroke: black;"/>
+
+	<g id="tensorLegs">
+		<g id="L0" class="tensorLeg">
+			<line class="tensorLegLine" x1="60" y1="40" x2="120" y2="120"/>
+			<text class="tensorLegLabel" x="78" y="64">0</text>
+			<circle class="tensorLegTip" cx="120" cy="120" r="6" style="touch-action: none;"/>
+		</g>
+	</g>
+	
+	<g id="tensors">
+		<g id="T0" class="tensor" x="60" y="40" transform="translate(60,40)" style="touch-action: none;">
+			<circle class="tensorSymbol" cx="0" cy="0" r="20"/>
+			<text class="tensorCaption" dy="5">0</text>
+		</g>
+	</g>
+
+	<g transform="translate(120,120)">
+		<image
+			x="0"
+			y="0"
+			xlink:href="data:image/png;base64,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"
+			preserveAspectRatio="none"
+			height="39"
+			width="25.25" />
+	
+		<text dx="30" dy="25" style="font-weight: bold;">+ Shift</text>
+	</g>
+</svg>

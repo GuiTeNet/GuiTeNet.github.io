@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="450" height="340">
+
+	<defs>
+		<linearGradient id="buttonGradient" x1="0%" x2="0%" y1="0%" y2="100%">
+			<stop offset="0%" stop-color="#F7F7F7"/>
+			<stop offset="100%" stop-color="#DDDDDD"/>
+		</linearGradient>
+		<style>
+			svg { font-family: Arial, Helvetica, sans-serif; }
+			.tensor { cursor: default; }
+			.tensorSymbol { fill: black; }
+			.tensorCaption { fill: white; text-anchor: middle; font-weight: bold; }
+			.tensorLeg { }
+			.tensorLegLine { fill: rgb(255, 171, 0); stroke: rgb(255, 171, 0); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+			.tensorLegLabel { fill: red; text-anchor: middle; font-weight: bold; }
+			.tensorLegTip { fill: rgb(0, 255, 0); stroke: rgb(255, 171, 0); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+			.tensorLegTipSnap { fill: red; stroke: rgb(255, 171, 0); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+			.svgButton { cursor: default; }
+			.svgButtonRect { fill: url("#buttonGradient"); stroke: rgb(147, 147, 147); }
+			.svgButtonText { text-anchor: middle; }
+		</style>
+	</defs>
+
+	<rect x="0" y="0" width="450" height="340" style="fill: none; stroke: black;" />
+	<g id="tensorLegs">
+		<g id="L0" class="tensorLeg">
+			<line class="tensorLegLine" x1="60" y1="80" x2="140" y2="140"/>
+			<text class="tensorLegLabel" x="84" y="98">0</text>
+			<circle class="tensorLegTip" cx="140" cy="140" r="6" style="touch-action: none;"/>
+		</g>
+		<g id="L1" class="tensorLeg">
+			<line class="tensorLegLine" x1="60" y1="80" x2="60" y2="180"/>
+			<text class="tensorLegLabel" x="60" y="110">1</text>
+			<circle class="tensorLegTipSnap" cx="60" cy="180" r="6" style="touch-action: none;"/>
+		</g>
+		<g id="L2" class="tensorLeg">
+			<line class="tensorLegLine" x1="60" y1="80" x2="140" y2="40"/>
+			<text class="tensorLegLabel" x="86.83281572999748" y="66.58359213500127">2</text>
+			<circle class="tensorLegTip" cx="140" cy="40" r="6" style="touch-action: none;"/>
+		</g>
+		<g id="L3" class="tensorLeg">
+			<line class="tensorLegLine" x1="140" y1="240" x2="140" y2="140"/>
+			<text class="tensorLegLabel" x="140" y="210">0</text>
+			<circle class="tensorLegTipSnap" cx="140" cy="140" r="6" style="touch-action: none;"/>
+		</g>
+		<g id="L4" class="tensorLeg">
+			<line class="tensorLegLine" x1="140" y1="240" x2="60" y2="180"/>
+			<text class="tensorLegLabel" x="116" y="222">1</text>
+			<circle class="tensorLegTipSnap" cx="60" cy="180" r="6" style="touch-action: none;"/>
+		</g>
+		<g id="L5" class="tensorLeg">
+			<line class="tensorLegLine" x1="140" y1="240" x2="240" y2="240"/>
+			<text class="tensorLegLabel" x="170" y="240">2</text>
+			<circle class="tensorLegTip" cx="240" cy="240" r="6" style="touch-action: none;"/>
+		</g>
+		<g id="L6" class="tensorLeg">
+			<line class="tensorLegLine" x1="220" y1="80" x2="140" y2="140"/>
+			<text class="tensorLegLabel" x="196" y="98">0</text>
+			<circle class="tensorLegTipSnap" cx="140" cy="140" r="6" style="touch-action: none;"/>
+		</g>
+		<g id="L7" class="tensorLeg">
+			<line class="tensorLegLine" x1="220" y1="80" x2="300" y2="140"/>
+			<text class="tensorLegLabel" x="244" y="98">1</text>
+			<circle class="tensorLegTip" cx="300" cy="140" r="6" style="touch-action: none;"/>
+		</g>
+		<g id="L8" class="tensorLeg">
+			<line class="tensorLegLine" x1="380" y1="80" x2="300" y2="140"/>
+			<text class="tensorLegLabel" x="356" y="98">0</text>
+			<circle class="tensorLegTipSnap" cx="300" cy="140" r="6" style="touch-action: none;"/>
+		</g>
+		<g id="L9" class="tensorLeg">
+			<line class="tensorLegLine" x1="380" y1="80" x2="380" y2="180"/>
+			<text class="tensorLegLabel" x="380" y="110">1</text>
+			<circle class="tensorLegTip" cx="380" cy="180" r="6" style="touch-action: none;"/>
+		</g>
+	</g>
+
+	<g id="tensors">
+		<g id="T0" class="tensor" x="60" y="80" transform="translate(60,80)" style="touch-action: none;">
+			<circle class="tensorSymbol" cx="0" cy="0" r="20"/>
+			<text class="tensorCaption" dy="5">0</text>
+		</g>
+		<g id="T1" class="tensor" x="140" y="240" transform="translate(140,240)" style="touch-action: none;">
+			<circle class="tensorSymbol" cx="0" cy="0" r="20"/>
+			<text class="tensorCaption" dy="5">1</text>
+		</g>
+		<g id="T2" class="tensor" x="220" y="80" transform="translate(220,80)" style="touch-action: none;">
+			<circle class="tensorSymbol" cx="0" cy="0" r="20"/>
+			<text class="tensorCaption" dy="5">2</text>
+		</g>
+		<g id="T3" class="tensor" x="380" y="80" transform="translate(380,80)" style="touch-action: none;">
+			<circle class="tensorSymbol" cx="0" cy="0" r="20"/>
+			<text class="tensorCaption" dy="5">3</text>
+		</g>
+	</g>
+
+	<g class="svgButton" transform="translate(10,305)" style="">
+		<rect class="svgButtonRect" width="74" height="25"/>
+		<text class="svgButtonText" dx="37" dy="18">Contract</text>
+	</g>
+</svg>

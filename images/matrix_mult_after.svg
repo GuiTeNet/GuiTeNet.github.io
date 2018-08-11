@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="320" height="120">
+
+	<defs>
+		<style>
+			svg { font-family: Arial, Helvetica, sans-serif; }
+			.tensorSymbol { fill: black; }
+			.tensorCaption { fill: white; text-anchor: middle; font-weight: bold; }
+			.tensorLegLine { fill: rgb(255, 171, 0); stroke: rgb(255, 171, 0); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+			.tensorLegLabel { fill: red; text-anchor: middle; font-weight: bold; }
+			.tensorLegTip { fill: rgb(0, 255, 0); stroke: rgb(255, 171, 0); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+		</style>
+	</defs>
+
+	<rect x="0" y="0" width="320" height="120" style="fill: none; stroke: black;"/>
+
+	<g id="tensorLegs">
+		<g id="L0" class="tensorLeg">
+			<line class="tensorLegLine" x1="160" y1="60" x2="40" y2="60"/>
+			<text class="tensorLegLabel" x="130" y="60">0</text>
+			<circle class="tensorLegTip" cx="40" cy="60" r="6" style="touch-action: none;"/>
+		</g>
+		<g id="L3" class="tensorLeg">
+			<line class="tensorLegLine" x1="160" y1="60" x2="280" y2="60"/>
+			<text class="tensorLegLabel" x="190" y="60">1</text>
+			<circle class="tensorLegTip" cx="280" cy="60" r="6" style="touch-action: none;"/>
+		</g>
+	</g>
+
+	<g id="tensors">
+		<g id="T2" class="tensor" x="160" y="60" transform="translate(160,60)" style="touch-action: none;" opacity="1">
+			<circle class="tensorSymbol" cx="0" cy="0" r="20"/>
+			<text class="tensorCaption" dy="5">2</text>
+		</g>
+	</g>
+</svg>

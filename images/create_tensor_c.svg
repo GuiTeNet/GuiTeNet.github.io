@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200" height="260">
+
+	<defs>
+		<style>
+			svg { font-family: Arial, Helvetica, sans-serif; }
+			.tensorSymbol { fill: black; }
+			.tensorCaption { fill: white; text-anchor: middle; font-weight: bold; }
+			#addTensorSymbol { fill: blue; }
+			#addTensorCaption { fill: white; text-anchor: middle; font-weight: bold; }
+		</style>
+	</defs>
+
+	<rect x="0" y="0" width="200" height="260" style="fill: none; stroke: black;"/>
+
+	<g id="tensorLegs"/>
+
+	<g id="tensors">
+		<g id="T0" class="tensor" x="120" y="180" transform="translate(120,180)">
+			<circle class="tensorSymbol" cx="0" cy="0" r="20"/>
+			<text class="tensorCaption" dy="5">0</text>
+		</g>
+	</g>
+
+	<g id="addTensor" transform="translate(20,20)">
+		<circle id="addTensorSymbol" cx="0" cy="0" r="20"/>
+		<text id="addTensorCaption" dy="5">+</text>
+	</g>
+</svg>

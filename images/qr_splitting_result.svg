@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="250">
+
+	<defs>
+		<style>
+			svg { font-family: Arial, Helvetica, sans-serif; }
+			.tensorSymbol { fill: black; }
+			.tensorCaption { fill: white; text-anchor: middle; font-weight: bold; }
+			.tensorLegLine { fill: rgb(255, 171, 0); stroke: rgb(255, 171, 0); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+			.tensorLegLabel { fill: red; text-anchor: middle; font-weight: bold; }
+			.tensorLegTip { fill: rgb(0, 255, 0); stroke: rgb(255, 171, 0); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+		</style>
+	</defs>
+
+	<rect x="0" y="0" width="400" height="250" style="fill: none; stroke: black;"/>
+
+	<g id="tensorLegs">
+		<g id="L0" class="tensorLeg">
+			<line class="tensorLegLine" x1="100" y1="120" x2="40" y2="40"/>
+			<text class="tensorLegLabel" x="82" y="96">0</text>
+			<circle class="tensorLegTip" cx="40" cy="40" r="6"/>
+		</g>
+		<g id="L1" class="tensorLeg">
+			<line class="tensorLegLine" x1="260" y1="120" x2="320" y2="180"/>
+			<text class="tensorLegLabel" x="281.2132034355964" y="141.21320343559643">1</text>
+			<circle class="tensorLegTip" cx="320" cy="180" r="6"/>
+		</g>
+		<g id="L2" class="tensorLeg">
+			<line class="tensorLegLine" x1="100" y1="120" x2="40" y2="120"/>
+			<text class="tensorLegLabel" x="70" y="120">2</text>
+			<circle class="tensorLegTip" cx="40" cy="120" r="6"/>
+		</g>
+		<g id="L3" class="tensorLeg">
+			<line class="tensorLegLine" x1="100" y1="120" x2="40" y2="200"/>
+			<text class="tensorLegLabel" x="82" y="144">1</text>
+			<circle class="tensorLegTip" cx="40" cy="200" r="6"/>
+		</g>
+		<g id="L4" class="tensorLeg">
+			<line class="tensorLegLine" x1="260" y1="120" x2="320" y2="60"/>
+			<text class="tensorLegLabel" x="281.2132034355964" y="98.78679656440357">2</text>
+			<circle class="tensorLegTip" cx="320" cy="60" r="6"/>
+		</g>
+		<g id="L5" class="tensorLeg">
+			<line class="tensorLegLine" x1="100" y1="120" x2="160" y2="120"/>
+			<text class="tensorLegLabel" x="130" y="120">3</text>
+			<circle class="tensorLegTip" cx="160" cy="120" r="6"/>
+		</g>
+		<g id="L6" class="tensorLeg">
+			<line class="tensorLegLine" x1="260" y1="120" x2="200" y2="120"/>
+			<text class="tensorLegLabel" x="230" y="120">0</text>
+			<circle class="tensorLegTip" cx="200" cy="120" r="6"/>
+		</g>
+	</g>
+
+	<g id="tensors">
+		<g id="T2" class="tensor" x="100" y="120" transform="translate(100,120)">
+			<circle class="tensorSymbol" cx="0" cy="0" r="20"/>
+			<text class="tensorCaption" dy="5">2</text>
+		</g>
+		<g id="T3" class="tensor" x="260" y="120" transform="translate(260,120)">
+			<circle class="tensorSymbol" cx="0" cy="0" r="20"/>
+			<text class="tensorCaption" dy="5">3</text>
+		</g>
+	</g>
+
+	<text class="infoMessage" dx="120" dy="100" style="text-anchor: middle;">Q</text>
+	<text class="infoMessage" dx="240" dy="100" style="text-anchor: middle;">R</text>
+</svg>

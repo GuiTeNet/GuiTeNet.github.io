@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="450" height="340">
+
+	<defs>
+		<style>
+			svg { font-family: Arial, Helvetica, sans-serif; }
+			.tensor { cursor: default; }
+			.tensorSymbol { fill: black; }
+			.tensorCaption { fill: white; text-anchor: middle; font-weight: bold; }
+			.tensorLegLine { fill: rgb(255, 171, 0); stroke: rgb(255, 171, 0); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+			.tensorLegLabel { fill: red; text-anchor: middle; font-weight: bold; }
+			.tensorLegTip { fill: rgb(0, 255, 0); stroke: rgb(255, 171, 0); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+			.tensorLegTipSnap { fill: red; stroke: rgb(255, 171, 0); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+		</style>
+	</defs>
+
+	<rect x="0" y="0" width="450" height="340" style="fill: none; stroke: black;" />
+	<g id="tensorLegs">
+		<g id="L2" class="tensorLeg">
+			<line class="tensorLegLine" x1="200" y1="120" x2="140" y2="40"/>
+			<text class="tensorLegLabel" x="182" y="96">0</text>
+			<circle class="tensorLegTip" cx="140" cy="40" r="6"/>
+		</g>
+		<g id="L5" class="tensorLeg">
+			<line class="tensorLegLine" x1="200" y1="120" x2="240" y2="240"/>
+			<text class="tensorLegLabel" x="209.48683298050514" y="148.46049894151543">1</text>
+			<circle class="tensorLegTip" cx="240" cy="240" r="6"/>
+		</g>
+		<g id="L9" class="tensorLeg">
+			<line class="tensorLegLine" x1="200" y1="120" x2="380" y2="180"/>
+			<text class="tensorLegLabel" x="228.46049894151543" y="129.48683298050514">2</text>
+			<circle class="tensorLegTip" cx="380" cy="180" r="6"/>
+		</g>
+	</g>
+
+	<g id="tensors">
+		<g id="T4" class="tensor" x="200" y="120" transform="translate(200,120)">
+			<circle class="tensorSymbol" cx="0" cy="0" r="20"/>
+			<text class="tensorCaption" dy="5">4</text>
+		</g>
+	</g>
+</svg>
