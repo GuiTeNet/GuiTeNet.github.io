@@ -45,10 +45,11 @@
 		</div>
 	</nav>
 
-	<main role="main" class="container">
+	<main role="main" class="container" style="max-width: 45rem;">
+
 		<h1>Tutorial</h1>
 
-		<p class="lead text-justify" style="max-width: 65%;">
+		<p class="lead text-justify">
 			What are tensors and tensor networks to begin with? A <em>tensor</em> is a generalization
 			of a matrix, i.e., a multidimensional array. The <em>rank</em> of a tensor is the number of indices
 			required to label a component. Thus matrices have rank 2 (row and column index), and
@@ -57,13 +58,13 @@
 			dimension; thus, the rank of the tensor in the figure is 4. The zero inside the black
 			disk serves as unique identification number for the tensor.
 		</p>
-		<figure class="figure text-center" style="max-width: 65%;">
+		<figure class="figure text-center">
 			<img src="images/tensor.svg" class="figure-img img-fluid">
 			<figcaption class="figure-caption text-center">
 				A single tensor with 4 legs (dimensions); the ordering of dimensions is indicated by the red labels
 			</figcaption>
 		</figure>
-		<p class="lead text-justify" style="max-width: 65%;">
+		<p class="lead text-justify">
 			A <em>tensor network</em> encompasses a collection of tensors together with certain
 			operations on them, like contractions (which generalize matrix-matrix multiplications)
 			or splitting of a tensor via so-called SVD or QR-decompositions. Tensor networks (like
@@ -74,7 +75,7 @@
 			for a more in-depth introduction, or
 			the <a href="https://arxiv.org/abs/1008.3477">review by Schollwöck (2011)</a>.
 		</p>
-		<p class="lead text-justify" style="max-width: 65%;">
+		<p class="lead text-justify">
 			GuiTeNet facilitates the graphical construction of tensor networks and associated operations,
 			and simultaneously generates source code for these operations.
 		</p>
@@ -82,12 +83,12 @@
 
 		<h2>Create a new tensor</h2>
 
-		<p class="lead text-justify" style="max-width: 65%;">
+		<p class="lead text-justify">
 			Add a new tensor to the network by drag-and-dropping the blue circle.
 			Initially, the new tensor has no legs yet. The blue "create tensor" symbol
 			reappears at its default location afterwards.
 		</p>
-		<figure class="figure" style="max-width: 65%;">
+		<figure class="figure">
 			<img src="images/create_tensor_a.svg" class="figure-img img-fluid"> <span style="font-size: 2em;">&raquo;</span>
 			<img src="images/create_tensor_b.svg" class="figure-img img-fluid"> <span style="font-size: 2em;">&raquo;</span>
 			<img src="images/create_tensor_c.svg" class="figure-img img-fluid">
@@ -97,12 +98,12 @@
 
 		<h2>Attach tensor legs</h2>
 
-		<p class="lead text-justify" style="max-width: 65%;">
+		<p class="lead text-justify">
 			Attach a new leg to a tensor by "pulling" it out of the tensor, i.e.,
 			drag-and-dropping the tensor and simultaneously holding the <kbd>Shift</kbd> key.
 			Each tensor and its legs can still be freely moved around within the GUI window.
 		</p>
-		<figure class="figure" style="max-width: 65%;">
+		<figure class="figure">
 			<img src="images/create_leg_a.svg" class="figure-img img-fluid"> <span style="font-size: 2em;">&raquo;</span>
 			<img src="images/create_leg_b.svg" class="figure-img img-fluid">
 			<figcaption class="figure-caption text-center">Attaching a tensor leg</figcaption>
@@ -111,7 +112,7 @@
 
 		<h2>Contract tensors</h2>
 
-		<p class="lead text-justify" style="max-width: 65%;">
+		<p class="lead text-justify">
 			Tensor contractions merge tensors together by summing over shared indices, generalizing
 			matrix-matrix multiplications. Recall that a "conventional" matrix-matrix
 			multiplication \(C = A B\) is defined as \(c_{ik} = \sum_j a_{ij} b_{jk}\):
@@ -121,12 +122,12 @@
 			are the tensors labeled 0, 1 and 2, respectively. The tips of to-be-contracted
 			(connected) legs change color from green to red.
 		</p>
-		<figure class="figure" style="max-width: 65%;">
+		<figure class="figure">
 			<img src="images/matrix_mult_before.svg" class="figure-img img-fluid"> <span style="font-size: 2em;">&raquo;</span>
 			<img src="images/matrix_mult_after.svg" class="figure-img img-fluid">
 			<figcaption class="figure-caption text-center">Conventional matrix-matrix multiplication</figcaption>
 		</figure>
-		<p class="lead text-justify" style="max-width: 65%;">
+		<p class="lead text-justify">
 			A general contraction allows several indices (legs) to be contracted simultaneously.
 			Specify a contraction by connecting the tips of tensor legs, and click the
 			"Contract" button to perform the contraction. The output tensor inherits the
@@ -135,12 +136,12 @@
 			first the free legs of the tensor with the smallest ID, then the free legs of
 			the tensor with the second smallest ID etc.
 		</p>
-		<figure class="figure" style="max-width: 65%;">
+		<figure class="figure">
 			<img src="images/contraction_before.svg" class="figure-img img-fluid"> <span style="font-size: 2em;">&raquo;</span>
 			<img src="images/contraction_after.svg" class="figure-img img-fluid">
 			<figcaption class="figure-caption text-center">Example of a general tensor network contraction</figcaption>
 		</figure>
-		<p class="lead text-justify" style="max-width: 65%;">
+		<p class="lead text-justify">
 			Besides visualizing tensor network operations, GuiTeNet also generates corresponding source code
 			(currently Python/NumPy, with additional programming languages planned for the future).
 			Contractions are conveniently translated into NumPy's
@@ -150,7 +151,7 @@
 		<p>
 			<pre>T4 = np.einsum(T0, (0, 1, 2), T1, (0, 1, 3), T2, (0, 4), T3, (4, 5), (2, 3, 5))</pre>
 		</p>
-		<p class="lead text-justify" style="max-width: 65%;">
+		<p class="lead text-justify">
 			The manuscript (<a href="https://arxiv.org/abs/1808.00532">arXiv:1808.00532</a>) explains the logic
 			of the code in more detail.
 		</p>
@@ -158,7 +159,7 @@
 
 		<h2>Split a tensor</h2>
 
-		<p class="lead text-justify" style="max-width: 65%;">
+		<p class="lead text-justify">
 			Splitting a tensor by a so-called QR or singular value decomposition (SVD) is
 			a ubiquitous operation in tensor network algorithms. The first step is the
 			"matricization" of the tensor: a subset of legs is grouped together into one
@@ -166,7 +167,7 @@
 			The two fat legs are interpreted as the rows and columns of a matrix, which is
 			then decomposed.
 		</p>
-		<p class="lead text-justify" style="max-width: 65%;">
+		<p class="lead text-justify">
 			The figure below illustrates this process (as it appears in GuiTeNet)
 			for the QR decomposition of a tensor with initially 5 legs.
 			First right-click on a tensor to initiate the splitting operation. An overlay
@@ -179,7 +180,7 @@
 			0, 1, 2 of Q match the original dimensions 0, 3, 2, and dimensions 1, 2 of R the
 			original dimensions 1, 4.
 		</p>
-		<figure class="figure" style="max-width: 65%;">
+		<figure class="figure">
 			<img src="images/qr_splitting_input.svg" class="figure-img img-fluid"> <span style="font-size: 2em;">&raquo;</span>
 			<img src="images/qr_splitting_params.svg" class="figure-img img-fluid"> <span style="font-size: 2em;">&raquo;</span>
 			<img src="images/qr_splitting_result.svg" class="figure-img img-fluid">
